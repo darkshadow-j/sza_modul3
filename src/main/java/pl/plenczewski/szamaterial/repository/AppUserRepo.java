@@ -6,4 +6,5 @@ import pl.plenczewski.szamaterial.model.AppUser;
 
 @Repository
 public interface AppUserRepo extends JpaRepository<AppUser, Long> {
+    AppUser getAppUserByUsername(String username);
 }
